@@ -11,6 +11,17 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	<link rel="stylesheet" href="github.css">
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/jquery.github.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#repos").github({
+				user: "phesus"
+			});
+		});
+	</script>
   </head>
   <body>
     <div class="wrapper">
@@ -44,7 +55,7 @@ $ git checkout gh-pages
 <h3>
 <a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p><div name="repos"></div></p>
 
 <h3>
 <a name="ourteam" class="anchor" href="#ourteam"><span class="octicon octicon-link"></span></a>Our team</h3>
