@@ -309,10 +309,20 @@ fieldset {
 .header-welcome-area div.home-display-table-cell,
 .header-welcome-area div.home-display-table-cell div { height: auto }
 .header-welcome-area {
-    background: url(../img/bg/home-bg.jpg) scroll 0 0;
+    background: url(../img/bg/home-bg.jpg) scroll 0 0; 
     background-size: cover;
     position: relative;
     z-index: 1;
+}
+.header-welcome-area video {
+    position: absolute;
+    top: 50%; left: 50%;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
 }
 .header-welcome-area:after {
     background: rgba(0, 0, 0, 0.3);
